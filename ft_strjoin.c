@@ -12,35 +12,38 @@
 
 #include "libft.h"
 
+static char *ft_helper(char *dst, const char *src)
+{
+    size_t  i;
+    size_t  len;
+
+    len = ft_strlen(src);
+    i = 0;
+    while (i < len)
+    {
+        dst[i] = src[i];
+        i++;
+    }
+    return (dst);
+}
+
 char    *ft_strjoin(char const  *s1, char const *s2)
 {
     char    *d;
-    size_t  i;
-    size_t  j;
     size_t  len1;
     size_t  len2;
 
     if (!s1 || !s2)
         return (NULL);
+    len1 = ft_strlen(s1);
+    len2 = ft_strlen(s2);
     if (len1 > SIZE_MAX - len2 - 1)
-        return (NULL;
-    d = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+        return (NULL);
+    d = malloc(sizeof(char) * (len1 + len2 + 1));
     if (!d)
         return (NULL);
-    i = 0;
-    len1 = ft_strlen(s1);
-    while (i < len1)
-    {
-        d[i] = s1[i];
-        i++;
-    }
-    j = 0;
-    len2 = ft_strlen(s2);
-    while (j < len2)
-    {
-        d[i + j] = s2[j];
-        j++;
-    }
-    d[i + j] = '\0';
+    ft_helper(d, s1);
+    ft_helper(d + len1, s2);
+    d[len1 + len2] = '\0';
     return (d);
 }
