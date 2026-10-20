@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 07:53:00 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/20 09:35:16 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/20 11:47:50 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,7 @@
 
 int main(void)
 {
+    const char *s1 = "hello ";
+    const char *s2 = "world ";
+    printf("%s", ft_strjoin(s1, s2));
 }
