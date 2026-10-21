@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:14:16 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/14 09:14:17 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/21 09:55:00 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,14 @@ size_t ft_strlcpy(char *dest, const char *src, size_t size)
     size_t i;
 
     i = 0;
-    while (src[i] != '\0' && (i <= size - 1))
+    if (size > 0)
     {
-        dest[i] = src[i];
-        i++;
+        while (src[i] != '\0' && (i < size - 1))
+        {
+            dest[i] = src[i];
+            i++;
+        } 
+        dest[i] = '\0';
     }
-    dest[i] = '\0';
     return (ft_strlen(src));
 }
