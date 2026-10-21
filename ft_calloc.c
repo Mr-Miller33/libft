@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 07:59:43 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/20 08:44:26 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/21 14:55:46 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ void    *ft_calloc(size_t nmemb, size_t size)
 {
     void *p;
 
-    if (nmemb == 0 || size == 0)
-        return (NULL);
-    if (size != 0 && nmemb > (SIZE_MAX / size))
+    if (size != 0 && nmemb > SIZE_MAX / size)
         return (NULL);
     p = malloc(nmemb *size);
     if (!p)

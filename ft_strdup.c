@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 07:59:25 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/20 09:13:07 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/21 10:53:58 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char    *ft_strdup(const char *s)
     size_t     i;
     size_t     max;
 
+    if (!s)
+        return (NULL);
     max = ft_strlen(s) + 1;
     d = malloc(sizeof(char) * max);
     if (!d)
