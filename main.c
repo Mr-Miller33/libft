@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 07:53:00 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/21 09:50:19 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/25 11:08:14 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 int main(void)
 {
-    char str[] = "adnan 1337";
-    char *m;
-    
-    m = ft_substr(str , 100 , 4);
-    printf("%s" , m);
-    free(m);
     
 }
