@@ -6,13 +6,13 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:14:12 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/14 09:14:13 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/26 11:56:26 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= ' ' && c <= '~')
-        return (1);
-    return (0);
+	if (c >= ' ' && c <= '~')
+		return (1);
+	return (0);
 }

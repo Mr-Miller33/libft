@@ -6,7 +6,11 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 09:37:15 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/20 09:37:16 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/26 18:05:34 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strmapi(char const *s, char(*f)(unsigned int, char))
+{
+	
+}
