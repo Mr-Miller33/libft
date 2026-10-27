@@ -6,7 +6,7 @@
 /*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 09:36:48 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/26 11:52:54 by moslaoui         ###   ########.fr       */
+/*   Updated: 2026/10/27 09:42:21 by moslaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static char	*copy_word(char const *s, size_t len)
 	return (word);
 }
 
-size_t	word_length(char const *s, char c)
+static size_t	word_length(char const *s, char c)
 {
 	size_t	i;
 	size_t	start;
