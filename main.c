@@ -14,5 +14,7 @@
 
 int main(void)
 {
-    
+    char str[10] = "hello";
+	char dtr[10]'
+	memmove(dtr, str, 7)
 }
