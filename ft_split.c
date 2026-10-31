@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 09:36:48 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/27 09:42:21 by moslaoui         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_split.c                                        :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: moslaoui <moslaoui@student.42.fr>         #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 09:36:48 by moslaoui         #+#    #+#              */
+/*   Updated: 2026/10/31 13:30:00 by moslaoui        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ static size_t	count_words(char const *s, char c)
 
 static char	*copy_word(char const *s, size_t len)
 {
-	char		*word;
-	size_t		i;
+	char	*word;
+	size_t	i;
 
 	word = malloc((len + 1) * sizeof(char));
 	if (!word)
@@ -78,10 +78,10 @@ static char	**free_words(char **words, size_t count)
 
 char	**ft_split(char const *s, char c)
 {
-	char		**words;
-	size_t		words_count;
-	size_t		word_len;
-	size_t		i;
+	char	**words;
+	size_t	words_count;
+	size_t	word_len;
+	size_t	i;
 
 	if (!s)
 		return (NULL);

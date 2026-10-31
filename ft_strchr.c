@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/14 10:44:35 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/16 11:25:30 by moslaoui         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strchr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: moslaoui <moslaoui@student.42.fr>         #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/14 10:44:35 by moslaoui         #+#    #+#              */
+/*   Updated: 2026/10/31 13:30:06 by moslaoui        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    while (*s)
-    {
-        if ((unsigned char)*s == (unsigned char)c)
-            return ((char *)s);
-        s++;
-    }
-    if ((unsigned char)*s == (unsigned char)c)
-        return ((char *)s);
-    return (NULL);
+	while (*s)
+	{
+		if ((unsigned char)*s == (unsigned char) c)
+			return ((char *) s);
+		s++;
+	}
+	if ((unsigned char)*s == (unsigned char) c)
+		return ((char *) s);
+	return (NULL);
 }

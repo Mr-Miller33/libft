@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 09:37:15 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/27 10:01:19 by moslaoui         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strmapi.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: moslaoui <moslaoui@student.42.fr>         #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 09:37:15 by moslaoui         #+#    #+#              */
+/*   Updated: 2026/10/31 13:30:12 by moslaoui        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char(*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
 	size_t			len;
 	char			*str;
-	
+
 	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);

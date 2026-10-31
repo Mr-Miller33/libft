@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: moslaoui <moslaoui@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/20 09:36:34 by moslaoui          #+#    #+#             */
-/*   Updated: 2026/10/24 09:34:14 by moslaoui         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strtrim.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: moslaoui <moslaoui@student.42.fr>         #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/20 09:36:34 by moslaoui         #+#    #+#              */
+/*   Updated: 2026/10/31 13:30:17 by moslaoui        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
-	if(!s1 ||	!set)
+	if (!s1 || !set)
 		return (NULL);
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
